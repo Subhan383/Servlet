@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<name>Subhan</name>
+		<age>24</age>
+		<occupation>IT Software</occupation>
+	</student>
+	<student>
+		<name>Sailaja</name>
+		<age>24</age>
+		<occupation>Banker</occupation>
+	</student>
+	<student>
+		<name>Razaq</name>
+		<age>25</age>
+		<occupation>IT Software</occupation>
+	</student>
+	<student>
+		<name>Basha</name>
+		<age>29</age>
+		<occupation>Manager</occupation>
+	</student>
+
+
+</students>
