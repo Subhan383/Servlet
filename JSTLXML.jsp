@@ -26,6 +26,29 @@
 </tr>
 </x:forEach>
 </table>
+<table border=1>
+<x:forEach select="$XMLFILE/students/student">
+<tr>
+<x:choose>
+<x:when select="age=24">
+
+<td><i><b><x:out select="name"/></b></i></td>
+<td><i><b><x:out select="age"/></b></i></td>
+<td><i><b><x:out select="occupation"/></b></i></td>
+
+</x:when>
+<x:otherwise>
+<td><x:out select="name"/></td>
+<td><x:out select="age"/></td>
+<td><x:out select="occupation"/></td>
+
+</x:otherwise>
+</x:choose>
+
+</tr>
+</x:forEach>
+</table>
+
 
 Name: <x:out select="$XMLFILE/students/student[2]/name"/><br/>
 Age: <x:out select="$XMLFILE/students/student[2]/age"/><br/>
