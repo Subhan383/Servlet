@@ -1,4 +1,4 @@
-package org.com.servletsexamples;
+package com.org.studyeasy;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -14,36 +14,18 @@ import javax.servlet.http.HttpServletResponse;
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public Controller() {
-       
-    }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+  
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		String param=request.getParameter("page");
 		if(param.equals("login")) {
 			getServletContext().getRequestDispatcher("/login.jsp").forward(request, response);
-			
-		}else if(param.equals("signup")) {
+		}else if(param.equals("about")) {
+			getServletContext().getRequestDispatcher("/about.jsp").forward(request, response);
+		} else if(param.equals("signup")) {
 			getServletContext().getRequestDispatcher("/signup.jsp").forward(request, response);
-			
-		}else {
+		} else  {
 			getServletContext().getRequestDispatcher("/pagenotfound.jsp").forward(request, response);
-		}
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		} 
 	}
 
 }

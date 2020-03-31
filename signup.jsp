@@ -4,32 +4,39 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>SignUp Page</title>
+<title>Please SignUp  here</title>
 </head>
 <body>
-<form action="submit.jsp" method="post">
-FirstName: <input type="text" name="firstname"  required/><br/>
-Last Name: <input type="text" name="lastname"  required/><br/>
-Password: <input type="text" name="password"  required/><br/>
-DOB: <input type="date" name="dob" /><br/>
-Select your country: <select name="countries"> 
-<option value="india" >India</option>
-<option value="pak" >Pakistan</option>
-<option value="israel" >Israel</option>
-<option value="ireland" >Ireland</option>
-<option value="usa" >USA</option>
-<option value="uae" >UAE</option><br/>
-</select>
-<br/>
-Gender: <input type="radio" name="gender" value="male" checked="checked"/>Male
-        <input type="radio" name="gender" value="female"/>Female<br/>
-Languages Known: <input type="checkbox" name="languages" value="english"/>English
-                 <input type="checkbox" name="languages" value="hindi"/>Hindi
-                  <input type="checkbox" name="languages" value="telugu"/>Telugu   
-                  <input type="checkbox" name="languages" value="urdu"/>URDU<br/>
- 
- <input type="submit" value="submit"/>                 
-   
-</form>
+
+<form action="submit.jsp" method="POST" >
+
+Enter Username: <input type="text" name="customer_name"/><br/>
+Enter UserId: <input type="text"    name="customer_id"/><br/>
+Enter Password: <input type="text" name="customer_password"/><br/>
+Enter City: <input type="text" name="customer_city"/><br/>
+Enter Gender: <input type="radio" name="customer_gender" value="Male"  />Male
+               <br/>
+              <input type="radio" name="customer_gender" value="Fe Male"/>Female
+              <br/> 
+Enter DOB: <input type="date" name="customer_dob"/><br/>
+Enter Age: <input type="number"    name="customer_age"/><br/>
+Languages Knows: <input type="checkbox" name="language" value="english">English
+                 <input type="checkbox" name="language" value="hindi">Hindi
+                 <input type="checkbox" name="language" value="telugu">Telugu
+                 <input type="checkbox" name="language" value="tamil">Tamil<br/>
+Country: <select name="country">
+          <option value="india">India</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="usa">USA</option>
+          <option value="england">England</option>
+          <option value="finland">Finland</option>
+          <option value="australia">Australia</option>
+          <option value="germany">Germany</option>
+          <option value="europe">Europe</option>
+          <option value="italy">Italy</option>
+          <option value="china">China</option>
+         </select>                 
+<input type="submit" value="submit"/>
+
 </body>
 </html>

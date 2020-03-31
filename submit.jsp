@@ -4,12 +4,24 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Home Page</title>
+<title>Welcome Subhan</title>
 </head>
 <body>
-<a href="<%=request.getContextPath()%>/Controller?page=login">Login</a><br/>
-<a href="<%=request.getContextPath()%>/Controller?page=signup">Signup</a>
+Name: <%= request.getParameter("customer_name") %><br/>
+Gender: <%= request.getParameter("customer_gender") %><br/>
+<%-- <% -- Languages Known: <%
+   String[] countries=request.getParameterValues("language");
+   if(countries!=null){
+	   for(int i=0;i<countries.length;i++){
+		   out.print("<br/>");
+		   out.print(countries[i]);
+	   }
+   }else {
+	   out.print("None Selected");
+   }
 
-
+ 
+ <br/> -- %> --%>
+Country: <%= request.getParameter("country") %>
 </body>
 </html>
